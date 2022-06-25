@@ -64,7 +64,7 @@ result.addEventListener("click", function(){
                 next = 1;
             break;
             case "+":
-                current =  (prev < 1 && prev > 0 && current < 1 && current > 0) ? (Number(prev) + Number(current)).toFixed(3) : prev + current;
+                current =  (prev < 1 && prev > 0 && current < 1 && current > 0) ? (Number(prev) + Number(current)).toFixed(3) : Number(prev) + Number(current);
                 prev = "";
                 fun = "";
                 showOnTerminal(current);
