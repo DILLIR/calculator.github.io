@@ -10,9 +10,6 @@ let out = document.querySelector(".calc__terminal"),
     fun = "",
     next = 0;
 
-
-
-    
 function showOnTerminal(text){
     out.innerHTML = text;
 }
@@ -69,6 +66,12 @@ result.addEventListener("click", function(){
                 fun = "";
                 showOnTerminal(current);
                 next = 1;
+            break;
+            default:
+                prev = "";
+                fun = "";
+                current = "";
+                showOnTerminal("unacceptable value")
             break;
         }
    }
